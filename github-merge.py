@@ -280,9 +280,9 @@ def parse_arguments():
 
 def main():
     # Extract settings from git repo
-    repo = git_config_get('githubmerge.repository')
+    repo = 'hebasto/bitcoin'
     host = git_config_get('githubmerge.host','git@github.com')
-    opt_branch = git_config_get('githubmerge.branch',None)
+    opt_branch = 'cmake-staging'
     testcmd = git_config_get('githubmerge.testcmd')
     ghtoken = git_config_get('user.ghtoken')
     signingkey = git_config_get('user.signingkey')
